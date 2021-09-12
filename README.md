@@ -5,6 +5,8 @@
 The Transformer model is implemented from scratch: Scaled Dot-Product Attention, followed by multi-head attention, afterwards building an encoder and decoder layer 
 and building the overall encoder and decoder architectures. Then we build input embeddings and positional encoders and the final NN layers of the Transformer network, before combining all components to have a trainable Transformer network model.
 
+![Transformer Diagram](transformer.png)
+
 The original text data was tokenized using a pretrained subword tokenizer that uses a BERT tokenizer optimized for the Portuguese-English translation dataset
 
 After training for 20 epochs, the Transformer model was able to reliably translate portugese sentences to english sentences, achieving 68% test accuracy on the Portuguese-English translation test dataset. Below are a few examples of model translating along with the attention weight plots to further understand how the model performed.
